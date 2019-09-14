@@ -2,9 +2,9 @@ server.port: 8080
 
 management.endpoints.web.exposure.include: '*'
 
-resilience4j.circuitbreaker.backends:
-  helloApi:
-    failure-rate-threshold: 50
-    wait-duration-in-open-state: 1000
-    ring-buffer-size-in-closed-state: 2
-    ring-buffer-size-in-half-open-state: 1
+#resilience4j.circuitbreaker.backends:
+#  helloApi:
+#    failure-rate-threshold: 50
+#    wait-duration-in-open-state: 1000
+#    ring-buffer-size-in-closed-state: 2
+#    ring-buffer-size-in-half-open-state: 1

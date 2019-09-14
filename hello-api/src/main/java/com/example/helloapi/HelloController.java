@@ -16,11 +16,12 @@ public class HelloController {
 
     @GetMapping("/hello")
     public HelloResource hello() {
+        logger.info("Controller hello() started.");
         if (random.nextBoolean()) {
-            logger.error("Error!");
+            logger.error("Error in Controller hello()");
             throw new RuntimeException("error");
         }
-        logger.info("hello()");
+        logger.info("Controller hello() finished.");
         return new HelloResource("hello");
     }
 }
